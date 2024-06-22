@@ -1,0 +1,89 @@
+:root{
+    --color1:skyblue;
+    --color2:#357bb3;
+    --color3:rgb(12, 0, 41);
+    --color4: black;
+    --time: 0.5s;
+    
+}
+
+.buttonTheme{
+    margin: auto;
+    margin-top: 40px;
+    z-index: 0;
+    background-color: var(--color2);
+    width: 130px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px 1px var(--color3) inset;    
+    transition: all var(--time); 
+}
+
+.slideDay{
+    position: relative;
+    z-index: 1;
+    top:5px;
+    left:5%;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: orange;
+    box-shadow: 0px -2px 2px 0px rgb(95, 92, 92) inset, 0.5px 0.5px 2px 0px rgb(255, 255, 255) inset, -1px -2px 0px 15px rgb(255, 255, 255,0.1),-1px -2px 0px 30px rgb(255, 255, 255,0.1),-1px -2px 0px 45px rgb(255, 255, 255,0.1);
+    animation-name:right ;
+    transition: all var(--time);
+
+}
+.slideNight{
+    position: relative;
+    z-index: 1;
+    top:5px;
+    left:64%;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(229, 224, 172);
+    box-shadow: 0px -2px 1px 0px rgb(95, 92, 92) inset, -0.5px 0.5px 2px 0px rgb(255, 255, 255) inset, -1px -2px 0px 15px rgb(255, 255, 255,0.1),-1px -2px 0px 30px rgb(255, 255, 255,0.1),-1px -2px 0px 45px rgb(255, 255, 255,0.1);   
+    animation-name:left;
+    transition: all var(--time);
+
+}
+@keyframes right{
+    0%{left:64%;background-color: lightyellow;}    
+    100%{left:5%;background-color: orange;}    
+    
+}
+@keyframes left{
+    0%{left:5%;background-color: orange;}    
+    100%{left:64%;background-color: rgb(229, 224, 172);}    
+    
+}
+
+.cover{
+    position: relative;
+    z-index: 2;
+    margin-top: -100.8px;
+    left: -45px;
+    width: 130px;
+    height: 50px;
+    background: none ;
+    border: 45px solid ;
+    border-radius: 80px;
+    border-color: var(--color1);
+    transition: border-color var(--time);
+    
+}
+
+body{
+    background-color: var(--color1);
+    transition: all var(--time);
+}
+div#text{
+    position:   relative;
+    z-index: 3;
+    color:var(--color4);
+    font-size: 40px;
+    font-family: Algerian;
+    text-align: center;
+    margin-top: 260px;
+    transition: all 1s ;
+}
