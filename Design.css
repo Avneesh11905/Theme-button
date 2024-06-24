@@ -10,8 +10,7 @@
 }
 
 .buttonTheme{
-    margin: auto;
-    align-items: center;    
+    margin: auto;    
     z-index: 0;
     background-color: var(--color2);
     width: 130px;
@@ -86,6 +85,6 @@ div#text{
     font-size: 40px;
     font-family: "Playwrite NZ", cursive;
     text-align: center;
-    margin-top: 260px;
+    margin-top: 300px;
     transition: all 1s ;
 }
