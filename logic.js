@@ -10,7 +10,7 @@ function light(sw) {
     r.style.setProperty('--color1','skyblue');
     r.style.setProperty('--color2','#357bb3');
     r.style.setProperty('--color3','rgb(12, 0, 41)');
-    document.getElementById("text").innerHTML="Light Mode"
+    document.getElementById("text").innerHTML="Light Theme"
     r.style.setProperty('--color4','black');
     
     
@@ -20,7 +20,7 @@ function light(sw) {
     r.style.setProperty('--color2','rgb(20, 19, 39)');
     r.style.setProperty('--color3','rgb(0, 0, 0)');
     r.style.setProperty('--color4','white');
-    document.getElementById("text").innerHTML="Dark Mode"
+    document.getElementById("text").innerHTML="Dark Theme"
     
   }
 }
