@@ -11,7 +11,7 @@
 
 .buttonTheme{
     margin: auto;
-    margin-top: 40px;
+    align-items: center;    
     z-index: 0;
     background-color: var(--color2);
     width: 130px;
